@@ -1,11 +1,33 @@
 # 
 获取视频中的音频
 
-因为文件太大，所以在这里把用到的第三方库删掉了
-下载后需要导入FFmpeg的库文件
-//------
-Because the file is too large, the third-party library used here has been deleted.
-After downloading, you need to import the library file of FFmpeg
-//------
+/**
+*  获取视频的缩略图
+*
+*  @param filePath 视频的本地路径
+*
+*  @return 视频截图
+*/
 
-附加下载链接：https://pan.baidu.com/s/1Du0c5pyQ_TeM6bCUuqcC1g    提取码: aame 
++ (UIImage *)getScreenShotImageFromVideoPath:(NSString *)filePath;
+
+
+/**
+*  获取视频中的音频
+*
+*  @param videoUrl 视频的本地路径
+*  @param newFile 导出音频的路径
+*  @completionHandle 音频路径的回调
+*/
+
++ (void)VideoManagerGetBackgroundMiusicWithVideoUrl:(NSURL *)videoUrl newFile:(NSString*)newFile completion:(void(^)(NSString *data))completionHandle;
+
+
+/*
+ *  获取视频播放时长
+ *  @param urlString 视频路径
+ */
+ 
++ (NSInteger)getVideoTimeByUrlString:(NSString*)urlString;
+
+在项目中加入LX_AVSeparation 类方法调用
