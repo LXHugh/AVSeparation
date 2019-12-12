@@ -8,20 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		18EDB2B423A2122C007033AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EDB2B323A2122C007033AA /* AppDelegate.m */; };
-		18EDB2B723A2122C007033AA /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EDB2B623A2122C007033AA /* SceneDelegate.m */; };
 		18EDB2BA23A2122C007033AA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EDB2B923A2122C007033AA /* ViewController.m */; };
 		18EDB2BD23A2122C007033AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18EDB2BB23A2122C007033AA /* Main.storyboard */; };
 		18EDB2BF23A2122C007033AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18EDB2BE23A2122C007033AA /* Assets.xcassets */; };
 		18EDB2C223A2122C007033AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18EDB2C023A2122C007033AA /* LaunchScreen.storyboard */; };
 		18EDB2C523A2122C007033AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EDB2C423A2122C007033AA /* main.m */; };
+		18EDB2CE23A212B3007033AA /* LX_AVSeparation.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EDB2CD23A212B3007033AA /* LX_AVSeparation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		18EDB2AF23A2122C007033AA /* AVSeparation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVSeparation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18EDB2B223A2122C007033AA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18EDB2B323A2122C007033AA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		18EDB2B523A2122C007033AA /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		18EDB2B623A2122C007033AA /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		18EDB2B823A2122C007033AA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		18EDB2B923A2122C007033AA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		18EDB2BC23A2122C007033AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -29,6 +27,8 @@
 		18EDB2C123A2122C007033AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18EDB2C323A2122C007033AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18EDB2C423A2122C007033AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18EDB2CC23A212B3007033AA /* LX_AVSeparation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LX_AVSeparation.h; sourceTree = "<group>"; };
+		18EDB2CD23A212B3007033AA /* LX_AVSeparation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LX_AVSeparation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,10 +63,9 @@
 			children = (
 				18EDB2B223A2122C007033AA /* AppDelegate.h */,
 				18EDB2B323A2122C007033AA /* AppDelegate.m */,
-				18EDB2B523A2122C007033AA /* SceneDelegate.h */,
-				18EDB2B623A2122C007033AA /* SceneDelegate.m */,
 				18EDB2B823A2122C007033AA /* ViewController.h */,
 				18EDB2B923A2122C007033AA /* ViewController.m */,
+				18EDB2CB23A21249007033AA /* AVSeparationClass */,
 				18EDB2BB23A2122C007033AA /* Main.storyboard */,
 				18EDB2BE23A2122C007033AA /* Assets.xcassets */,
 				18EDB2C023A2122C007033AA /* LaunchScreen.storyboard */,
@@ -74,6 +73,15 @@
 				18EDB2C423A2122C007033AA /* main.m */,
 			);
 			path = AVSeparation;
+			sourceTree = "<group>";
+		};
+		18EDB2CB23A21249007033AA /* AVSeparationClass */ = {
+			isa = PBXGroup;
+			children = (
+				18EDB2CC23A212B3007033AA /* LX_AVSeparation.h */,
+				18EDB2CD23A212B3007033AA /* LX_AVSeparation.m */,
+			);
+			path = AVSeparationClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,10 +154,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18EDB2CE23A212B3007033AA /* LX_AVSeparation.m in Sources */,
 				18EDB2BA23A2122C007033AA /* ViewController.m in Sources */,
 				18EDB2B423A2122C007033AA /* AppDelegate.m in Sources */,
 				18EDB2C523A2122C007033AA /* main.m in Sources */,
-				18EDB2B723A2122C007033AA /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
