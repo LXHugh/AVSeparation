@@ -1,5 +1,5 @@
 # 
-获取视频中的音频
+获取视频中的音频（音视频分离）
 
 /**
 *  获取视频的缩略图
@@ -29,5 +29,3 @@
  */
  
 + (NSInteger)getVideoTimeByUrlString:(NSString*)urlString;
-
-在项目中加入LX_AVSeparation 类方法调用
