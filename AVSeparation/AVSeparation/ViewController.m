@@ -16,10 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-  [LX_AVSeparation VideoManagerGetBackgroundMiusicWithVideoUrl:[NSURL URLWithString:@"视频路径"] newFile:@"音频导出路径" completion:^(NSString * _Nonnull data) {
-    //音频路径返回
-    
-  }];
+    [LX_AVSeparation VideoManagerGetBackgroundMiusicWithVideoUrl:[NSURL URLWithString:@"视频路径"] newFile:@"音频导出路径" completion:^(BOOL success) {
+        
+    }];
 }
 
 

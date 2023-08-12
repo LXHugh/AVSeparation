@@ -33,9 +33,9 @@ typedef void (^ReturnVideoPath)(NSString *newPath);
 *
 *  @param videoUrl 视频的本地路径
 *  @param newFile 导出音频的路径
-*  @completionHandle 音频路径的回调
+*  @completionHandle 完成回调
 */
-+ (void)VideoManagerGetBackgroundMiusicWithVideoUrl:(NSURL *)videoUrl newFile:(NSString*)newFile completion:(void(^)(NSString *data))completionHandle;
++ (void)VideoManagerGetBackgroundMiusicWithVideoUrl:(NSURL *)videoUrl newFile:(NSString*)newFile completion:(void(^)(BOOL success))completionHandle;
 
 /*
  *  获取视频播放时长
